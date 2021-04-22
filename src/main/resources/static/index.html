@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ban欢迎你</title>
+</head>
+<body>
+<h1>banbanban</h1>
+<form action="/user" method="get">
+    <input value="REST-GET 提交" type="submit">
+</form>
+<form action="/user" method="post">
+    <input name="_method" type="hidden" value="delete">
+    <input value="REST-DELETE 删除" type="submit">
+</form>
+<form action="/user" method="post">
+    <input value="REST-PUT 增加" type="submit">
+    <input name="_method" type="hidden" value="put">
+</form>
+<form action="/user" method="post">
+    <input value="REST-POST 修改" type="submit">
+    <input name="_method" type="hidden" value="post">
+</form>
+
+<!--测试参数@PathVariable  路径变量-->
+<a href="/person/21/person/ban?height=175&inters=basketball&inters=girls">/person/{userage}/person/{username}</a>
+
+<form action="/save" method="post">
+    测试@RequestBody获取数据<br/>
+    用户名:<input name="username"/><br/>
+    邮箱:<input name="email"/>
+    <input type="submit" value="提交"/>
+</form>
+</body>
+</html>

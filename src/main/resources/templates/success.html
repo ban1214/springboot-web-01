@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:text="${msg}">好好</h1> <br/>
+<h2>
+    <a href="www.ritian.com" th:href="${link}">去百度</a>
+    <a th:href="@{link}">去百度(只是字符串)</a>
+</h2>
+</body>
+</html>
